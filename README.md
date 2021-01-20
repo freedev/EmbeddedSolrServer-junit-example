@@ -1,4 +1,4 @@
-### EmbeddedSolrServer Example
+# EmbeddedSolrServer Example
 
 As the title states, this little project will help you to create junit test with EmbeddedSolrServer.
 
