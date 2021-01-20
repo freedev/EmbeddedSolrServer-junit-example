@@ -4,7 +4,6 @@ import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.response.QueryResponse;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -22,16 +21,6 @@ public class TestCourseCatalogIndex {
     @BeforeAll
     public static void init() throws IOException, SolrServerException {
         EmbeddedSolrServerFactory.init();
-        loadData();
-    }
-
-    @AfterAll
-    public static void end() {
-        EmbeddedSolrServerFactory.deleteSolrData();
-    }
-
-    public static void loadData() throws IOException, SolrServerException {
-
     }
 
     @DisplayName("Check presence all documents")
