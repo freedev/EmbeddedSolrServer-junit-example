@@ -3,7 +3,6 @@ package it.damore.solr;
 import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
-import org.apache.solr.client.solrj.embedded.EmbeddedSolrServer;
 import org.apache.solr.client.solrj.response.QueryResponse;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
@@ -17,9 +16,9 @@ import java.io.IOException;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class TestCourseCatalogIndex extends TestBase {
+public class TestDefaultIndex extends TestBase {
 
-    private static final Logger logger = LoggerFactory.getLogger(TestCourseCatalogIndex.class);
+    private static final Logger logger = LoggerFactory.getLogger(TestDefaultIndex.class);
     static private final String CORE_CONFIG = "_default";
     static private final String CORE_NAME = "core1";
 
