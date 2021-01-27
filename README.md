@@ -8,11 +8,16 @@ This task can be accomplished using an embedded version of Solr [(`EmbeddedSolrS
 
 > For information on how to use EmbeddedSolrServer please review the SolrJ JUnit tests in the [`org.apache.solr.client.solrj.embedded`](https://github.com/apache/lucene-solr/tree/master/solr/core/src/test/org/apache/solr/client/solrj/embedded) package of the Solr source release.
 
-## Solr Test Configuration
+## Solr Core Configurations
 
 A Solr Core is an individual Solr instance (represents a logical index) and multiple cores can run on a single node. In other words, this  means that when you're are writing your tests happens you need to test many Solr Cores and each of them has with its own configuration. 
 
-In this project Solr Core configurations are stored in the folder [/configsets](https://github.com/freedev/EmbeddedSolrServer-junit-example/tree/main/configsets). At moment there are  only two Solr Core configurations samples coming with the standard Solr Distribution.
+In this project Solr Core configurations are stored in the folder [/configsets](https://github.com/freedev/EmbeddedSolrServer-junit-example/tree/main/configsets). At moment there are only two Solr Core configurations samples coming with the standard Solr Distribution.
+
+## Running Tests
+
+Running tests assumes you have already configured your Java enviroment to build your code, if you didn't alread look at Building chapter.
+Tests are [here](https://github.com/freedev/EmbeddedSolrServer-junit-example/tree/main/src/test/java/it/damore/solr)
 
 ## Issues
 Please report issues at https://github.com/freedev/EmbeddedSolrServer-junit-example/issues
